@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>libphash — perceptual image hashing in C and Python</title>
+<meta name="description" content="libphash computes perceptual image hashes (aHash, dHash, pHash, wHash, mHash, BMH, Radial, ColorHash) in C, with an official Python binding. Find resized, recompressed and edited copies of an image.">
+<link rel="canonical" href="https://gudoshnikovn.github.io/">
+<link rel="icon" href="https://gudoshnikovn.github.io/libphash/assets/logo.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="libphash — perceptual image hashing in C and Python">
+<meta property="og:description" content="Perceptual image hashes in C, with an official Python binding: find resized, recompressed and edited copies of an image.">
+<meta property="og:url" content="https://gudoshnikovn.github.io/">
+<style>
+  :root {
+    --bg: #fafafa; --fg: #1b1b1f; --muted: #5c5c66; --card: #ffffff; --border: #e2e2e8; --accent: #3a5bd9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #16161a; --fg: #ececf1; --muted: #a0a0ab; --card: #1f1f25; --border: #33333c; --accent: #8ea4ff; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 64px 16px; }
+  h1 { font-size: 1.9rem; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .lead { color: var(--muted); margin: 0 0 40px; }
+  .card {
+    display: block; padding: 20px 22px; margin-bottom: 16px; border-radius: 10px;
+    background: var(--card); border: 1px solid var(--border); color: inherit; text-decoration: none;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card h2 { font-size: 1.2rem; margin: 0 0 6px; color: var(--accent); }
+  .card p { margin: 0; }
+  code { font: 0.9em ui-monospace, SFMono-Regular, Menlo, monospace; }
+  footer { margin-top: 40px; color: var(--muted); font-size: 0.9rem; }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <h1>libphash</h1>
+  <p class="lead">Perceptual image hashing: a short fingerprint of an image, so that a resized
+  copy, a recompressed JPEG or a slightly edited version lands a few bits away from the
+  original, while an unrelated picture lands about half the bits away.</p>
+
+  <a class="card" href="https://gudoshnikovn.github.io/libphash/">
+    <h2>libphash — the C library</h2>
+    <p>Nine algorithms (aHash, dHash, pHash, wHash, mHash, BMH, Radial, ColorHash,
+    ColorMoments), SIMD-accelerated JPEG, PNG and WebP decoding, batch hashing. How each
+    algorithm works, measured, and how to choose one.</p>
+  </a>
+
+  <a class="card" href="https://gudoshnikovn.github.io/python-libphash/">
+    <h2>python-libphash — the Python binding</h2>
+    <p>The official binding of the same library: <code>pip install python-libphash</code>.</p>
+  </a>
+
+  <footer>Source on GitHub:
+    <a href="https://github.com/gudoshnikovn/libphash">libphash</a> ·
+    <a href="https://github.com/gudoshnikovn/python-libphash">python-libphash</a>
+  </footer>
+</main>
+</body>
+</html>

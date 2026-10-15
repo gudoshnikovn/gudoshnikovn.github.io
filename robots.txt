@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gudoshnikovn.github.io/libphash/sitemap.xml
+Sitemap: https://gudoshnikovn.github.io/python-libphash/sitemap.xml
